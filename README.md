@@ -1,5 +1,4 @@
-# Projeto NASA APOD
-
+# Projeto Site NASA 
 Este projeto consiste em uma interface web para visualizar a "Astronomy Picture of the Day" (APOD) da NASA, utilizando um backend em Python (FastAPI) e um frontend simples (HTML/JS/CSS).
 
 ## Pré-requisitos
