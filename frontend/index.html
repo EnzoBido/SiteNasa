@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA - O Que Havia no Espaço no Seu Aniversário?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars-container"></div>
+    
+    <main class="container">
+        <header class="hero">
+            <h1>Explorador Cósmico</h1>
+            <p>Descubra o que a NASA capturou no dia em que você nasceu.</p>
+        </header>
+
+        <section class="search-section card">
+            <div class="input-group">
+                <label for="birth-date">Sua Data de Nascimento:</label>
+                <input type="date" id="birth-date" max="" min="1995-06-16">
+            </div>
+            <button id="search-btn">Explorar o Espaço</button>
+        </section>
+
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Buscando nas profundezas do espaço...</p>
+        </div>
+
+        <section id="result-section" class="hidden">
+            <div class="result-card card">
+                <h2 id="photo-title"></h2>
+                <div id="media-container">
+                    <!-- Imagem ou Vídeo será inserido aqui -->
+                </div>
+                <div class="details">
+                    <p id="photo-explanation"></p>
+                    <span id="photo-date" class="date-badge"></span>
+                </div>
+            </div>
+        </section>
+
+        <div id="error-message" class="error hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
